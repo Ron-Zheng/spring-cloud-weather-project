@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: msa-weather-data-api-eureka
+
+server:
+  port: 8082
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+  instance:
+    appname: ${spring.application.name}
+    hostname: localhost
