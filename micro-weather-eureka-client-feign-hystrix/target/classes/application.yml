@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: micro-weather-eureka-client-feign-hystrix
+    
+server:
+  port: 8086
+    
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
